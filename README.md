@@ -6,13 +6,8 @@ This project aims to develop a price comparison solution specifically for compar
 ## Team Members  
 - **Shaik Mahaboob** (Roll No: 20211CEI0142)  
   Email: [shaik.20211cei0142@presidencyuniversity.in](mailto:shaik.20211cei0142@presidencyuniversity.in)  
-  Phone: +91 8328050921  
 - **INDUKURI MANVITHA REDDY** (Roll No: 20211CEI0024)  
-  Email: [indukuri.20211cei0024@presidencyuniversity.in](mailto:indukuri.20211cei0024@presidencyuniversity.in)  
-  Phone: +91 7013229283
-- **J ABHINAY REDDY** (Roll No: 20211CEI0151)  
-  Email: [abhinay.20211cei0151@presidencyuniversity.in](mailto:abhinay.20211cei0151@presidencyuniversity.in)  
-  Phone: +91 6300102389
+- **J ABHINAY REDDY** (Roll No: 20211CEI0151)
 
 ## Guide  
 - **Debasmita Mishra**  
