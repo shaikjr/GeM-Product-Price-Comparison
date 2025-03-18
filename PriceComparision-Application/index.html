@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CompareWise - Home</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #fff !important;
+    }
+    .nav-item a {
+      color: #fff !important;
+      transition: 0.3s;
+    }
+    .nav-item a:hover {
+      color: #ffcc00 !important;
+    }
+
+    /* Main Content */
+    .container {
+      text-align: center;
+      margin-top: 10vh;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+    }
+
+    /* Search Box */
+    .search-container {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-box {
+      width: 100%;
+      max-width: 500px;
+      padding: 12px;
+      border-radius: 50px;
+      border: none;
+      font-size: 1.1rem;
+      text-align: center;
+      outline: none;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .search-box:focus {
+      box-shadow: 0px 0px 10px #ffcc00;
+    }
+
+    .search-btn {
+      margin-top: 10px;
+      padding: 12px 30px;
+      border-radius: 50px;
+      border: none;
+      background: #ffcc00;
+      color: #222;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .search-btn:hover {
+      background: #e6b800;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">CompareWise</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="comparison.html">Compare</a></li>
+          <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Product Detail</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Find the Best Prices Instantly!</h1>
+    <p>Compare, save, and shop wisely.</p>
+    
+    <div class="search-container">
+      <input type="text" id="searchInput" class="search-box" placeholder="Enter product name...">
+    </div>
+    <button class="search-btn" id="searchBtn">Search</button>
+  </div>
+
+  <!-- Bootstrap JS and Dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS -->
+    <script>
+      document.getElementById("searchBtn").addEventListener("click", function() {
+          let searchQuery = document.getElementById("searchInput").value.trim();
+    
+          if (searchQuery) {
+              // Redirect to comparison.html with query as a URL parameter
+              window.location.href = `comparison.html?query=${encodeURIComponent(searchQuery)}`;
+          } else {
+              alert("Please enter a product name.");
+          }
+      });
+    </script>
+
+</body>
+</html>
