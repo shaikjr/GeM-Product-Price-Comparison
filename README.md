@@ -11,8 +11,7 @@ This project aims to develop a price comparison solution specifically for compar
 
 ## Guide  
 - **Debasmita Mishra**  
-  Email: [debasmita.mishra@presidencyuniversity.in](mailto:debasmita.mishra@presidencyuniversity.in)  
-  Phone: +91 8480699188  
+  Email: [debasmita.mishra@presidencyuniversity.in](mailto:debasmita.mishra@presidencyuniversity.in)
   **Area of Expertise**: AI, ML, DL, RPA, etc.  
   **Guide Program**: COM & CEI
 
